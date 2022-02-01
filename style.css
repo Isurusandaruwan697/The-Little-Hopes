@@ -127,7 +127,42 @@ img.logo{
 
 /* nav bar is not functional yet this just a front end...need continuation with some css and js */
 
+/* start the social icon decoration part*/
+.social-icons{
 
+    position: fixed;
+    top: 55%;
+    right: 0px;
+    transform: translateX(-50%);}
+
+.social-icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    line-height: 0px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+}
+
+.social-icons i{
+    color: rgb(48, 48, 48);
+    font-size: 20px;
+}
+.social-icons a:hover {background-color: rgb(46, 38, 38);
+transition: all ease 0.5s;}
+.social-icons a:hover i{color: rgb(255, 255, 255);transition: all ease 0.5s;}
+
+/* when minimize the icon boxes disble*/
+@media (max-width :909px) {
+    .social-icons{
+        display: none;
+    }
+}
+/* end of the social icon decaration part*/
 
 
 
