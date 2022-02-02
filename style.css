@@ -165,6 +165,86 @@ transition: all ease 0.5s;}
 /* end of the social icon decaration part*/
 
 
+/*start of the slder part */
+.b{
+    width: 100%;
+    height: 700px;
+    background-image: url(image/Earl\ Jayasuriya\ 167.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: slider 40s infinite linear;
+    
+}
+
+@keyframes slider{
+    0%{
+        background-image: url(image/Earl\ Jayasuriya\ 167.jpg);
+    }
+    50%{
+        background-image: url(image/SRI_LANKA_-_1001_-_Bambini.jpg);
+    }
+}
+
+.text{
+    width: 800px;
+    position: absolute;
+    top: 230px;
+    left: 180px;
+    color:#fff;
+    padding-left: 120px;
+    animation: an 2s ease-out 1 both;
+   
+}
+/* text effections of the slider when lord they were some effections*/
+@keyframes an{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -190px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+
+/*when minimize the text hide*/
+@media (max-width :909px) {
+    .text{
+        display: none;
+    }
+}
+.text h1{
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+
+.text p{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.text button{
+    margin-left: 50px;
+}
+
+.button1{
+    position:fixed;
+    width: 140px;
+    height: 42px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+    background-color: #fff;
+    border: none;
+
+}
+button:active{
+    transform: scale(1.2);
+}
+
+/*end of the slider part*/
 
 
 
