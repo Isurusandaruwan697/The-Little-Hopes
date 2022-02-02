@@ -3,33 +3,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>SCAA-Sri Lanka</title>
+    <title>Little-Hope Sri Lanka</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="x-icon" href="image/logo.jfif">
-    <script src="jscript.js"></script>
+    <link rel="shortcut icon" type="x-icon" href="image/Free_Sample_By_Wix (4).jfif">
+    
 </head>
 <body>
-       <!--navigation bar start from here-->
-       <nav>
-           <!--logo comes here-->
-          <!--previous logo <label class="logo">SCAA-Sri Lanka</label>-->
-          <img class="logo" src="image/logo.jfif" alt="">
-           <!--linking section or menu bar-->
-           <ul>
-           
-               <li><a href="http://" class="active">Home</a></li>
-               <li><a href="http://">About-Us</a></li>
-               <li><a href="http://">Contact-Us</a></li>
-               <li><a href="http://" class="active1">Donate</a></li>
-               <li><a href="http://">Log-In</a></li>
-           </ul>
-            <label id="icon">
-                <i class="fa fa-bars"></i>
-            </label>
-       </nav>
-       <!--end of nav bar-->
+    <nav class="navbar">
+        <h1 class="logo">Little Hope</h1>
+        <ul class="links">
+            <li><a class="active" href="http://">Home</a></li>
+            <li><a href="http://">About-Us</a></li>
+            <li><a href="http://">Contact-Us</a></li>
+            <li><a href="http://">Donate</a></li>
+            <li><a href="http://">Log-In</a></li>
+        </ul>
+        <label id="icon" class="menu1">
+            <i class="fa fa-bars"></i>
+        </label>
+
+    </nav>
+       <header>
+           <div class="header-section">
+                <h1>Let's be a hope for this small harts!</h1>
+                <h2> Information of nerst child-centers.</h2>
+                <div class="section">
+                    <a href="#" class="buttun1">Find-Center</a>
+                </div>
+           </div>
+       </header>
 
        <!--attach social icons bar-->
        <div class="social-icons">
@@ -39,22 +43,23 @@
         <a href="http:youtube.com"><i class="fa fa-youtube"></i></a>
     </div><!--end of the social icon bar-->
 
-    <div class="b">
-        <div class="text">
-            <h1>
-                SCAA-Sri Lanka
-            </h1>
-            <p>
-                we belive no child should go to bed hungry,and that food is Essential.
-                Every child deserve a Good life.
-            </p>
-            <button class="button1">Donate</button>
-        </div>
-        </div>
-        <div class="mid">
 
-        </div>
+<!--for the upcoming events-->
 
-       
+
+
+
+
+<script>
+    /*for the nav bar minimize function*/
+const menubtn=document.querySelector('.menu1')
+const links=document.querySelector('.links')
+   
+   menubtn.addEventListener('click',()=>{
+   links.classList.toggle('menu')
+   })
+
+   /*end of nav fnction*/
+</script>      
 </body>
 </html>

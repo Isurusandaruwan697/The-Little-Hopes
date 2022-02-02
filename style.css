@@ -1,137 +1,177 @@
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
+   box-sizing: border-box;
 }
 /*this is for the home page*/
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-nav{
-    height: 85px;
+/*nav bar star*/
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    box-shadow:2px 2px 12px rgba(0,0,0, 0.5);
-}
-
-nav ul{
-    float: right;
-    margin-right: 40px;
+    justify-content: space-between;
+    padding: 20px;
     
 }
 
-nav li{
-    display: inline-block;
-    margin: 0 8px;
-    line-height: 80px;
-
-}
-/*navgation link design*/
 nav a{
-    color:rgba(0, 0, 0, 0.918);
-    font-size: 17px;
+    color:whitesmoke;
+    font-size: 15px;
     text-transform: uppercase;
     border: 1px solid transparent;
-    padding:7px 10px ;
+    padding:4px 10px ;
     border-radius: 3px;
     letter-spacing: 2px;
-
-
 }
-/*when mouse gos the box with border comes*/
+
 a.active,a:hover{
     border: 1px solid rgb(34, 33, 33);
-    transition: .5s;
-    
+    transition: .20s; 
 }
-/*icon export from the fontawsam*/
-nav #icon{
-    color: rgb(71, 67, 67);
-    font-size: 30px;
-    line-height:70px;
-    float: right;
-    margin-right: 60px;
-    padding-top: 25px;
-    cursor: pointer;
-    display: none;
-    
-}
-/*changes of logo happens whenthe minimize */
-@media(max-width :1048px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 60px;
-    }
-    nav ul{
-        margin-right: 20px;
 
-    }
-    nav a{
-        font-size: 17px;
-    }
+ul{
+    list-style: none;
 }
-/*icon get show when the minimize of the page */
-@media(max-width :909px){
-    nav #icon{
-        display: block;
 
-    }
-    nav ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background:rgb(221, 163, 48);
-        top: 80px;
-        left: 0px;
-        text-align: center;
-        transition: all 5s;
-       
-    }
-    /*menu bar links get into same line*/
-    nav li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-        
-    }
-    nav a{
-        font-size: 20px;
-    }
-    /*when minimize box conents romoved and add color for mouse pointer goes*/
-    a.active,a:hover{
-        border: none;
-        color: rgb(24, 35, 83);
-    }
+.links{
+    display: flex;
+    align-items: center; 
 
 }
 
-a.active1{
-    font-weight: bold;
+.links li{
+    margin: 0 28px;
 }
 
-img.logo{
-    padding: 0 100px;
-    width: 190px;
-}
-/*add new img logo this is previous logo*/
-/*label.logo{
+
+.logo{
     font-size: 35px;
     font-weight: bold;
     color: rgb(54, 53, 53);
-    padding: 0 97px;
-    line-height: 80px;
-    text-transform: uppercase;
-}*/
+}
+#icon{
+    display: none;
+}
 
-/* nav bar is not functional yet this just a front end...need continuation with some css and js */
+/*when minimize content*/
+@media (max-width :850px) {
+    nav #icon{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 30px;
+        display: block;
+        cursor: pointer;
+
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+
+    }
+    .links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: ivory;
+        margin-top: -900px;
+         transition: all 2s;
+    }
+    .menu{
+
+        margin-top: 0px;
+    }
+    .navbar a{
+        color: #000;
+    }
+
+    .links li{
+        margin: 30px auto;
+    }
+}
+
+
+/*heder content*/
+header{
+    width: 100%;
+    height: 90%;
+    background-image: url(image/Earl\ Jayasuriya\ 167.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slider 40s infinite linear;
+}
+@keyframes slider{
+    0%{
+        background-image: url(image/Earl\ Jayasuriya\ 167.jpg);
+    }
+    50%{
+        background-image: url(image/SRI_LANKA_-_1001_-_Bambini.jpg);
+    }
+}
+
+.header-section{
+    margin-top: 30px;
+    color: whitesmoke;
+    text-align: center;
+
+}
+.header-section h1{
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.header-section h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:30px ;
+    margin-bottom: 30px;
+    margin-top: 2px;
+    
+}
+.buttun1{
+    padding: 10px 15px;
+    background: crimson;
+    border-radius: 30px;
+    color: whitesmoke;
+    margin-top: 6px;
+}
+.section{
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* start the social icon decoration part*/
 .social-icons{
 
     position: fixed;
-    top: 55%;
+    top: 45%;
     right: 0px;
     transform: translateX(-50%);}
 
@@ -145,11 +185,11 @@ img.logo{
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
     line-height: 0px;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
 }
 
 .social-icons i{
-    color: rgb(48, 48, 48);
+    color: rgb(19, 19, 19);
     font-size: 20px;
 }
 .social-icons a:hover {background-color: rgb(46, 38, 38);
@@ -166,85 +206,3 @@ transition: all ease 0.5s;}
 
 
 /*start of the slder part */
-.b{
-    width: 100%;
-    height: 700px;
-    background-image: url(image/Earl\ Jayasuriya\ 167.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    animation: slider 40s infinite linear;
-    
-}
-
-@keyframes slider{
-    0%{
-        background-image: url(image/Earl\ Jayasuriya\ 167.jpg);
-    }
-    50%{
-        background-image: url(image/SRI_LANKA_-_1001_-_Bambini.jpg);
-    }
-}
-
-.text{
-    width: 800px;
-    position: absolute;
-    top: 230px;
-    left: 180px;
-    color:#fff;
-    padding-left: 120px;
-    animation: an 2s ease-out 1 both;
-   
-}
-/* text effections of the slider when lord they were some effections*/
-@keyframes an{
-    from{
-        opacity: 0;
-        transform: perspective(500px) translate3d(-35px, -40px, -190px) rotate3d(1, -1, 0, 35deg);
-    }
-    to{
-        opacity: 1;
-        transform: perspective(500px) translate3d(0, 0, 0);
-    }
-}
-
-/*when minimize the text hide*/
-@media (max-width :909px) {
-    .text{
-        display: none;
-    }
-}
-.text h1{
-    margin-bottom: 30px;
-    font-size: 70px;
-}
-
-.text p{
-    font-size: 35px;
-    margin-bottom: 40px;
-}
-
-.text button{
-    margin-left: 50px;
-}
-
-.button1{
-    position:fixed;
-    width: 140px;
-    height: 42px;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 14px;
-    outline: none;
-    margin: 0px 10px;
-    background-color: #fff;
-    border: none;
-
-}
-button:active{
-    transform: scale(1.2);
-}
-
-/*end of the slider part*/
-
-
-
