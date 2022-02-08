@@ -6,7 +6,7 @@
 }
 .section{
     width: 100%;
-    background-image:linear-gradient(rgba(17, 17, 17, 0.507), rgba(15, 15, 15, 0.534)), url(4.png);
+    background-image:linear-gradient(rgba(17, 17, 17, 0.507), rgba(15, 15, 15, 0.534)), url(image/4.png);
     background:
     background-repeat: no-repeat;
     background-size: circle;
