@@ -5,35 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="donate.css">
     <link rel="shortcut icon" type="x-icon" href="image/Free_Sample_By_Wix (4).jfif">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Little Hopes Donation</title>
 </head>
 <body>
+    <nav class="navbar">
+        <h1 class="logo">Little Hopes <div class="line2"></div></h1>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About-Us</a></li>
+            <li><a href="contact us.html">Contact-Us</a></li>
+            <li><a class="active" href="donate.html">Donate</a></li>
+            <li><a href="login.html">Log-In</a></li>
+        </ul>
+        <label id="icon" class="menu1">
+            <i class="fa fa-bars"></i>
+        </label>
+    </nav>
+       <div class="title">
+           <h1>Little Hopes Donation</h1>
+           <h3>we are alweys at your service</h3>
+       </div>
+
+       <div class="donateform">
+           <form action="save.php" method="post">
+               <input type="text" name="name" class="form-control" placeholder="Your Name" required ><br>
+               <input type="email" name="ename" class="form-control" placeholder="Email" required ><br>
+               <input type="text" name="bank" class="form-control" placeholder="Bank" required ><br>
+               <input type="text" name="cno" class="form-control" placeholder="Credit Card No" required ><br>
+               <input type="text" name="valiu" class="form-control" placeholder="Amount $" required ><br>
+
+               <input type="submit" class="form-control submit" value="Add Donation" >
+           </form>
+ 
+    </div>
     
-<div class="container">
-    
-    <div class="box">
-
-        <form method="post" action="save.php"> 
-            <div class="row">
-            <div class=col-75>
-                <h2>Payment Details</h2>
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" placeholder="First Name" class="in1">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" placeholder="Last Name" class="in2">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Email Address" class="in3">
-                <label for="cname">Name on card</label>
-                <input type="text" id="cname" placeholder="Name on card" class="in4">
-                <label for="cno">Credit Card Number</label>
-                <input type="text" id="cno" placeholder="Credit Card Number" class="in5">
-                <label for="amount">Amount</label>
-                <input type="text" id="amount" placeholder="Amount $" class="in6">
-                <label>
-                    <input type="submit" value="Donate Now" class="button"></label></div></div></form>
-</div>
-
-</div>
-
 </body>
 </html>
