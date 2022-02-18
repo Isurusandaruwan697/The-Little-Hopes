@@ -29,11 +29,11 @@
     background-position:center;
     background-size: cover;
     background-image: linear-gradient
-    (rgba(0, 0, 100, 0.8),rgba(0,0,100,0.8)),url(image/background.png.jpg);
+    (rgba(0, 0, 100, 0.8),rgba(0,0,100,0.8)),url(image/background.jpg);
     padding: 55px;
     box-sizing: border-box ;
     backface-visibility: hidden;
 }  
 .card-back{
-    transform: rotateY(180deg)update ;
-}
+    transform:  ;
+} 
