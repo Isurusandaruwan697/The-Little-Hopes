@@ -29,11 +29,36 @@
     background-position:center;
     background-size: cover;
     background-image: linear-gradient
-    (rgba(0, 0, 100, 0.8),rgba(0,0,100,0.8)),url(image/background.png.jpg);
+    (rgba(0, 0, 100, 0.8),rgba(0,0,100,0.8)),url(image/background.jpg);
     padding: 55px;
     box-sizing: border-box ;
     backface-visibility: hidden;
 }  
 .card-back{
-    transform: rotateY(180deg)update ;
+    transform:rotateY(180deg);
+} 
+.card h2{
+    font-weight: normal;
+    font-size: 24px;
+}
+.input-box{
+    width: 100%;
+    background: transparent;
+    border:1px slid #fff;
+    margin:6px 0;
+    height: 32px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color:#fff;
+}
+::placeholder{
+    color: fff;
+    font-size: 12px;
+}
+button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 35px 0 10px;
 }
