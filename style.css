@@ -148,12 +148,14 @@ header{
     margin-top: 30px;
     color: whitesmoke;
     text-align: center;
+   padding-bottom: 45px;
 
 }
 .header-section h1{
     font-size: 8vmin;
     
 }
+
 
 a{
     text-decoration: none;
@@ -192,7 +194,9 @@ a{
     position: fixed;
     top: 45%;
     right: 0px;
-    transform: translateX(-50%);}
+    transform: translateX(-50%);
+
+}
 
 .social-icons a{
     display: flex;
@@ -205,6 +209,7 @@ a{
     border: 1px solid black;
     line-height: 0px;
     box-shadow: 2px 2px 15px rgba(3, 2, , 0.651);
+
 }
 
 .social-icons i{
@@ -248,6 +253,22 @@ section{
     margin: 10px auto;
     border-radius: 8px;
     font-weight: bold;
+    font-size: 3vmin;
+}
+
+.buttun12{
+            color: white;
+			border: none;
+			cursor: pointer;
+			width:100%;
+			opacity: 0.9;
+            background: crimson;
+            padding: 15px 30px;
+            border-radius: 15px;
+}
+
+.buttun12:hover{
+    opacity: 2;
 }
 
 /*service box*/
@@ -263,6 +284,7 @@ section{
     box-sizing: border-box;
     overflow: hidden;
     text-align: center;
+
 
 }
 
@@ -284,6 +306,7 @@ section{
     align-items: center;
     justify-content: center;
 
+
 }
 
 .contaner .box .icon{
@@ -301,6 +324,7 @@ section{
     font-size: 35px;
     font-weight: 700;
     transition: 3s;
+
 }
 
 .contaner .box:nth-child(1) .icon{

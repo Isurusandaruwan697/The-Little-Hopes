@@ -28,7 +28,7 @@
        </div>
 
        <div class="donateform">
-           <form action="save.php" method="post">
+           <form action="save.php" method="post" onsubmit="welcome();">
                <input type="text" name="name" class="form-control" placeholder="Your Name" required ><br>
                <input type="email" name="ename" class="form-control" placeholder="Email" required ><br>
                <input type="text" name="bank" class="form-control" placeholder="Bank" required ><br>
@@ -47,9 +47,14 @@ const links=document.querySelector('.links')
    
    menubtn.addEventListener('click',()=>{
    links.classList.toggle('menu')
-   })
+   });
 
    /*end of nav fnction*/
+
+   function welcome(){
+       alert("Thank you for the donation");
+   }
+   
 </script>       
 </body>
 
