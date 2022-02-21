@@ -28,7 +28,7 @@
 .container .title h1{
     text-transform: uppercase;
     font-size: 100px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:rgb(255, 166, 0);
 }
 .subtitle h3{
@@ -130,10 +130,10 @@ width: 40%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    color: aqua;
+    color: rgb(230, 44, 69);
 }
 h1{
-    font-size: 36px;
+    font-size: 60px;
     font-weight: 600;
 }
 .image{
@@ -151,3 +151,117 @@ h1{
     transform: scale(1.1);
 
 }
+/*nav bar star*/
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+nav a{
+    color:whitesmoke;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding:4px 10px ;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+a.active,a:hover{
+    border: 1px solid rgb(34, 33, 33);
+    border-radius: 12px;
+    transition: .20s; 
+}
+
+ul{
+    list-style: none;
+}
+
+.links{
+    display: flex;
+    align-items: center; 
+
+}
+
+.links li{
+    margin: 0 28px;
+}
+
+
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(54, 53, 53);
+}
+#icon{
+    display: none;
+}
+
+/*when minimize content*/
+@media (max-width :850px) {
+    nav #icon{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 30px;
+        display: block;
+        cursor: pointer;
+
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+
+    }
+    .links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: ivory;
+        margin-top: -900px;
+         transition: all 2s;
+    }
+    .menu{
+
+        margin-top: 0px;
+    }
+    .navbar a{
+        color: #000;
+    }
+
+    .links li{
+        margin: 30px auto;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .ro .col{
+        margin:20px auto;
+    }
+
+    .tours .col{
+        width: 100%;
+    }
+    .galary{
+        justify-content: center;
+        align-items: center;
+    }
+    .galary img{
+        width: 90%;
+
+    }
+}
+/*end of the nav section*/
