@@ -4,11 +4,11 @@
   <head>
     <meta charset="UTF-8">
     <title> Little Hopes-Contact Us Form  </title>
-    <link rel="stylesheet" href=" contact style.css">
+    <link rel="stylesheet" href="contact us.css">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="php.validate.executablePath": "c:/php/php.United-1"> 
+     <link rel="php.validate.executablePath": > 
    </head>
 <body>
   <nav class="navbar">
@@ -16,7 +16,7 @@
     <ul class="links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About-Us</a></li>
-        <li><a class="active"href="http://"">Contact-Us </a></li>
+        <li><a class="active"href="http://">Contact-Us </a></li>
         <li><a href="donate.html" >Donate</a></li>
         <li><a href="login.html">Log-In</a></li>
     </ul>
@@ -49,39 +49,31 @@
       <div class="right-side">
         <div class="topic-text">Send Us a Message</div> <br>
         <p>Please get in touch and our expert support team will answer all your questions.</p>
-        <main>
+      <form action="contact.php" method="post">
 
-       <form method="post" class="formD">
-          <div class="name">
-            <div class="dname">
+        <input type="text" name="name" class="form-control" placeholder=" Name" required ><br>
+        <input type="email" name="ename" class="form-control" placeholder=" Email" required ><br>
+        <input type="text" name="bank" class="form-control" placeholder=" Message.." required ><br>
+        
+          <input type="submit" class="form-control-submit" value="submit" >
+        
+      </form>
+    
+  
+  <body>
+   <body>
+   
+</body>
 
-              <div class="input-box1">
-                <span class="bname">Name:</span>
-                <input type="text" placeholder="Enter Your Name" required>
-              </div>
 
-              <div class="input-box1">
-                <span class="bname">Email:</span>
-                <input type="email" placeholder="Enter Your Email" required>
-              </div>
 
-              <div class="input-box1">
-                <span class="bname">Message:</span>
-                <textarea name="" placeholder="Enter your Message" cols="30" rows="10" required></textarea>
-              </div>
 
-              <div class="button1">
-                <input type="submit" value="SEND">
-              </div>
 
-            </div>
-          </div>
-       </form>
-      </main>
-    </div>
-    </div>
-  </div>
- 
+
+
+
+
+
 <script>
     /*for the nav bar minimize function*/
 const menubtn=document.querySelector('.menu1')
