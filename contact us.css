@@ -1,12 +1,8 @@
-286  style (2).css 
-@@ -0,0 +1,286 @@
-/* Google Font CDN Link */
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins",  sans-serif;
+  font-family: "Poppins" , sans-serif;
 }
 /*nav bar star*/
 .navbar{
@@ -21,7 +17,7 @@
 }
 
 nav a{
-  color:rgb(219, 4, 4);
+  color:rgb(29, 25, 25);
   font-size: 15px;
   text-transform: uppercase;
   border: 1px solid transparent;
@@ -212,21 +208,29 @@ body{
   width: 100%;
   margin: 12px 0;
 }
-.input-box1 input{
-  display: flex;
-  font-family: 'Times New Roman', Times, serif;
-  height: 50px;
-  width: 700px;
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
   border: none;
   outline: none;
-  font-size: 11px;
+  font-size: 16px;
   background: #d4e8f3;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 0 15px;
   resize: none;
 }
-
-form .button1 input{
+.right-side .message-box{
+  min-height: 110px;
+}
+.form-control-submit .input-box textarea{
+  padding-top: 6px;
+}
+.form-control-submit .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.form-control-submit{
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -236,10 +240,27 @@ form .button1 input{
   background: #e7b36e;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 25px;
 }
-form .button1 :hover{
+.form-control-submit:hover{
   background: #ff4545;
 }
+
+
+.form-control{
+  margin-top: 25px;
+  width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(70, 70, 70);
+    color:rgb(14, 13, 13);
+    font-size: 2vmin;
+    margin-bottom: 16px;
+}
+
+
+
 
 @media (max-width: 950px) {
   .container{
@@ -273,23 +294,23 @@ form .button1 :hover{
    width: 100%;
    margin-left: 0;
  }
-}
-.dname{
-  box-shadow: 0 5px 15px rgba(201, 201, 201, 0.726);
-}
-.input-box1 textarea{
-  font-family: 'Times New Roman', Times, serif;
-  padding: 10px;
-  width: 770px;
-  font-size: 11px;
-  background: #d4e8f3;
-  border-radius: 3px;
-  padding: 10px 15px;
-  outline: none;
-  resize: none;
-  border: none;
-  background: #d4e8f3;
+ .footer{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
 }
 
-  
-  
+.footer .left,
+.footer .center,
+.footer .right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+}
+
