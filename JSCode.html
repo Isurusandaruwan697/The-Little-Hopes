@@ -65,8 +65,8 @@
             <th  class="bg-info" data-colname="branch_name" data-order="desc">Branch_Name &#9650</th>
             <th  data-colname="district" data-order="desc">Dristrict &#9650</th>
             <th  data-colname="contact_number" data-order="desc">Contact_Number &#9650</th>
-            <th  data-colname="head_name" data-order="desc">Head_Name &#9650</th>
-            <th  data-colname="emai" data-order="desc">Email &#9650</th>
+            <th  data-colname="capacity" data-order="desc">Capacity &#9650</th>
+            <th  data-colname="address" data-order="desc">Address &#9650</th>
             <th  data-colname="side_link" data-order="desc">Side_Link &#9650</th>
         </tr>
         <tbody id="myTable">
@@ -77,12 +77,13 @@
     
     <script>
     var myArray = [
-        {'branch_name':'', 'district':'Gampaha', 'contact_number':'0777195024' , 'head_name':'P.W.R.S. Perera' , 'email':'pwrsperera@gmail.com' , 'get_in_to_the_side':'<a href="https://accountabilitylab.org/?gclid=CjwKCAiAsNKQBhAPEiwAB-I5zTokr_ZgKWe-BQ4iW9aKoLt2ykfCt4lwFYetI3ksYlUqzyddr0lWChoCabEQAvD_BwE">click here</a>'},
-        {'branch_name':'', 'district':'Kandy', 'contact_number':'0772219066' , 'head_name':'Ranjan Silva' , 'email':'ranjansilva@gmail.com' , 'get_in_to_the_side':'<a href="https://moldovawcf.org/?gclid=CjwKCAiAsNKQBhAPEiwAB-I5zTolPPYVCoqfv-Ltnc9iH3MVzhMQpxySNSS9cgynUI9bE8ZJDiRDLRoCdMMQAvD_BwE">click here</a>'},
-        {'branch_name':'', 'district':'Galle', 'contact_number':'0779875461' , 'head_name':'Kumara Dunuwila' , 'email':'kumaradunuwila@gmail.com' , 'get_in_to_the_side':'<a href="https://ourhopeland.org/donate/?gclid=CjwKCAiAsNKQBhAPEiwAB-I5zRUHlyJ1f8jLHkraRqtosWgjvERSntMeM0NuPgk07uD8Oj_c_aIbhBoCfqkQAvD_BwE">click here</a>'}, 
-        {'branch_name':'', 'district':'Jaffna', 'contact_number':'0718412237' , 'head_name':'Asitha Mendis' , 'email':'asithamendis@gmail.com' , 'get_in_to_the_side':'<a href="https://www.savethechildren.org/">click here</a>'},
-        {'branch_name':'', 'district':'Badulla', 'contact_number':'0715235689' , 'head_name':'Anura Bandara' , 'email':'anurabandara@gmail.com' , 'get_in_to_the_side':'<a href="https://www.savethechildren.net/">click here</a>'},
-        {'branch_name':'', 'district':'Ampara', 'contact_number':'0711154628' , 'head_name':'Gayani Alwis' , 'email':'gayanimendis@gmail.com' , 'get_in_to_the_side':'<a href="https://worldofchildren.org/">click here</a>'},
+        {'branch_name':'Tikiri Sewana State Adoption Childrens Home', 'district':'Kandy', 'contact_number':'+94812388145' , 'capacity':'45' , 'address':'Ogastawatta, Udaperadeniya, Sri Lanka.' , 'side_link':'Not Provided'},
+        {'branch_name':'Werewelawatta Childrens detention Home', 'district':'Kandy', 'contact_number':'+94812316885' , 'capacity':'30' , 'address':'Bambaradeniya, Welamboda, Sri Lanka.' , 'side_link':'Not Provided'},
+        {'branch_name':'St.Joseph Childrens Home', 'district':'Kandy', 'contact_number':'+94812205654' , 'capacity':'25' , 'address':'Good Sheperd Convent, Katukele, Peradeniya, Sri Lanka' , 'side_link':'Not Provided'}, 
+        {'branch_name':'Shalome Childrens Home', 'district':'Nuwara-Eliya', 'contact_number':'+94522277445' , 'capacity':'20' , 'address':'No.05, Ecolson estate, Maskeliya, Sri Lanka.' , 'side_link':'<a href="https://www.shalomchildrenshome.org/">click here</a>'},
+        {'branch_name':'St. Francis Childrens Home', 'district':'Mathale', 'contact_number':'+94662234092' , 'capacity':'100' , 'address':'Vihara Para, Matale, Sri Lanka.' , 'side_link':'<a href="">click here</a>'},
+        {'branch_name':'Happy Home Childrens Home', 'district':'Nuwara-Eliya', 'contact_number':'+94512223995' , 'capacity':'15' , 'address':'No71, Rophista, Kotagala. Sri Lanka.' , 'side_link':'Not Provided'},
+        {'branch_name':'Buddhist Boys Childrens Home', 'district':'Mathale', 'contact_number':'+94662222330' , 'capacity':'20' , 'address':'No.50, Kohombiliwela, Matale, Sri Lanka.' , 'side_link':'Not Provided'},
     ]
     
     
@@ -128,9 +129,9 @@
                             <td>${data[i].branch_name}</td>
                             <td>${data[i].district}</td>
                             <td>${data[i].contact_number}</td>
-                            <td>${data[i].head_name}</td>
-                            <td>${data[i].email}</td>
-                            <td>${data[i].get_in_to_the_side}</td>
+                            <td>${data[i].capacity}</td>
+                            <td>${data[i].address}</td>
+                            <td>${data[i].side_link}</td>
                        </tr>`
             table.innerHTML += row
         }
