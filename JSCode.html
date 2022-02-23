@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Document</title>
 </head>
+<script>
+    function info(){
+        alert("when you click on the traingles the image content will be change into alpebetical order");
+    }
+    window.alert("Welcome");
+</script>
 <body> 
     <style>
+        body{background-image: url(image/Oahu2018-48447.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
         th{ 
             cursor: pointer;
             color:#fff;
@@ -17,16 +28,39 @@
 
                 .inx{
 
-                    padding-top: 100px;
+                    padding-top: 50px;
                     width: 1400px;
                     height: 100px;
                     align-items: center;
                     padding-left: 120px;
                 }
+                .font{
+                    text-align: center;
+                    margin-top: 70px;
+                    font-size: 6vmin;
+                
+                }
+               .h{
+                 background-color: crimson;
+                 border-radius: 10px;
+                }
+
+                h3{
+                    padding-left: 120px;
+                    font-size: 2vmin;
+                }
+
     </style>
+    <h1 class="font">
+        
+         Center Information
+    </h1>
+    <h3 onclick="info();">
+        <button class="h">Table Instructions</button>
+    </h3>
     
     <section class="inx">
-    <table class="table table-striped">
+    <table class="table table-striped" >
         <tr  class="bg-info">
             <th  class="bg-info" data-colname="branch_name" data-order="desc">Branch_Name &#9650</th>
             <th  data-colname="district" data-order="desc">Dristrict &#9650</th>
