@@ -16,7 +16,7 @@
     <ul class="links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About-Us</a></li>
-        <li><a class="active" href="contact us.html">Contact-Us </a></li>
+        <li><a class="active"href="http://">Contact-Us </a></li>
         <li><a href="donate.html" >Donate</a></li>
         <li><a href="login.html">Log-In</a></li>
     </ul>
@@ -49,17 +49,21 @@
       <div class="right-side">
         <div class="topic-text">Send Us a Message</div> <br>
         <p>Please get in touch and our expert support team will answer all your questions.</p>
-      <form action="contact.php" method="post">
-
-        <input type="text" name="name" class="form-control" placeholder=" Name" required ><br>
-        <input type="email" name="ename" class="form-control" placeholder=" Email" required ><br>
-        <input type="text" name="bank" class="form-control" placeholder=" Message.." required ><br>
-        
-          <input type="submit" class="form-control-submit" value="submit" >
-        
+        <form action="savemsg.php" method="post">
+          <div class="input-box">
+          <input type="text" name="Name" class="form-control" placeholder="Your Name" class="box1" required ><br>
+        </div>
+        <div class="input-box">
+          <input type="email" name="Email" class="form-control" placeholder="Email" class="input-box" required ><br>
+        </div>
+        <div class="input-box message-box">
+          <textarea placeholder="Enter your message" name="Message" class="input-box message-box" required ></textarea><br>
+        </div>
+          <input type="submit" value="Send Now" class="button" style="width: 120px; height: 30px; background-color: rgb(183, 218, 241); border-radius: 10px; ">
       </form>
-    
-  
+    </div>
+    </div>
+  </div>
   <body>
    <body>
    
