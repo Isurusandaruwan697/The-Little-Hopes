@@ -157,3 +157,67 @@ ul{
     line-height: 1.7;
 }
 /* end who we are*/
+
+/*start of the counter*/
+* {   
+    box-sizing: border-box;   
+} 
+.column {                   
+    float: left;                    
+    width: 25%;    
+    padding: 4px;   
+}   
+       
+.block {   
+    padding: 10px;   
+    text-align: center;   
+    background-color: rgb(0, 0, 0);   
+    color: white;   
+    }   
+     
+.Image{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+    color: rgb(192, 22, 22);
+}
+h2{
+    font-size: 25px;
+    font-weight: 60;
+  
+.column {   
+                   
+    float: left;   
+                    
+    width: 25%;   
+       
+    padding: 4px;   
+}   
+      
+.row {   
+            
+    margin: 3px;  
+}    
+  
+  
+.block {   
+    padding: 10px;   
+    text-align: center;   
+    background-color: rgb(233, 212, 20);   
+    color: white;   
+    }   
+  
+  
+.block:hover {   
+    transform: scale(1.1);   
+    background-color: rgb(212, 170, 200);   
+    transition-duration: 2s;   
+    color: white;   
+}   
+      
+.fa {   
+    font-size: 50px;   
+}   
+
+/*end of the counter*/
