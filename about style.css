@@ -216,6 +216,44 @@ body{
 }
 /*end of he gallery*/
 
+/*----Vission and Mision----*/
+.mvv-cotianer{
+    max-width: 95%;
+    margin: 50px auto 0;
+}
+.mvv-cotianer .mvv-block{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mvv-cotianer .mvv-block .mission-image{
+    flex: 0 0 auto;
+    width: 400px;
+}
+.mvv-cotianer .mvv-block .mission-image img{
+    width: 100%;
+    border-radius: 5px;
+}
+.mvv-cotianer .mvv-block .content{
+    flex: 0 0 auto;
+    width: calc(100% - 400px);
+    text-align: center;
+}
+.mvv-cotianer .mvv-block .vision-image{
+    flex: 0 0 auto;
+    width: 400px;
+}
+.mvv-cotianer .mvv-block .vision-image img{
+    width: 100%;
+    border-radius: 5px;
+}
+.mvv-cotianer .mvv-block .content{
+    flex: 0 0 auto;
+    width: calc(100% - 400px);
+}
+/*end of the Vission and Mision */
+
 /*start of the counter*/
 * {   
     box-sizing: border-box;   
