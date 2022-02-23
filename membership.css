@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -140,7 +139,7 @@ ul{
 body{
     width: 100%;
     height: 80%;
-    background-image:url(image/WhatsApp\ Image\ 2022-02-17\ at\ 23.13.52.jpeg);
+    background-image:url(image/1200-495880422-leader-helps-others.jpg);
     background-size: cover;
    text-align: center;
    
@@ -177,20 +176,20 @@ h3{
 
 .form-control{
  
-    width: 600px;
+    width: 500px;
     background: transparent;
     border: none;
     outline: none;
     border-bottom: 2px solid rgb(70, 70, 70);
     color:rgb(255, 255, 255);
-    font-size: 2vmin;
+    font-size: 3vmin;
     margin-bottom: 16px;
 
 }
 
 ::placeholder{
-    color: rgb(216, 216, 216);
-    font-size: 2vmin;
+    color: rgb(255, 255, 255);
+    font-size: 3vmin;
 }
 
 input{
@@ -205,18 +204,16 @@ form .submit{
     font-weight: bold;
     letter-spacing: 2px;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 15px;
-    opacity: 0.9;
-
 
 
 }
+
 .lsp{
     color: #000;
     font-size: 2vmin;
 }
-
 
 form .submit:hover{
     background-color: rgb(209, 32, 32);
