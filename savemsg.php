@@ -3,13 +3,13 @@
 $con = mysqli_connect("localhost", "root", "", "web");
 
 //Set Variebles for the input
-$name = $_POST['name'];
-$ename = $_POST['ename'];
-$bank = $_POST['bank'];
+$Name=$_POST['Name'];
+$Email=$_POST['Email'];
+$Message=$_POST['Message'];
 
 
 //Create a MySQL command to INSERT data into data table
-$sql = "INSERT INTO web(name,ename,bank) VALUES ('$name', '$ename','$bank')";
+$sql = "INSERT INTO contactus(Name,Email,Message) VALUES ('$Name','$Email','$Message')";
 
 
 //Now Insert data into database
@@ -19,4 +19,7 @@ if (!mysqli_query($con, $sql)) {
 } else{
 	echo "<script>alert('Wow! User Registration Completed.')</script>";
 	header("Location:http://localhost/web-assesment-group-new/contact us.html");}
+
+
+
 ?>
