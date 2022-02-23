@@ -17,7 +17,7 @@
 }
 
 nav a{
-  color:rgb(29, 25, 25);
+  color:rgb(19, 17, 17);
   font-size: 15px;
   text-transform: uppercase;
   border: 1px solid transparent;
@@ -141,6 +141,7 @@ body{
   background-size: cover;
 
 }
+
 .container{
   width: 85%;
   background: rgb(255, 255, 255);
@@ -223,49 +224,20 @@ body{
 .right-side .message-box{
   min-height: 110px;
 }
-.form-control-submit .input-box textarea{
+.right-side .input-box textarea{
   padding-top: 6px;
 }
-.form-control-submit .button{
+.right-side .button{
   display: inline-block;
   margin-top: 12px;
 }
-.form-control-submit{
-  color: #fff;
-  font-size: 18px;
-  outline: none;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background: #e7b36e;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 25px;
-}
-.form-control-submit:hover{
-  background: #ff4545;
-}
-
-
-.form-control{
-  margin-top: 25px;
-  width: 600px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid rgb(70, 70, 70);
-    color:rgb(14, 13, 13);
-    font-size: 2vmin;
-    margin-bottom: 16px;
-}
-
-
-
 
 @media (max-width: 950px) {
   .container{
+    margin-top: 25px;
     width: 90%;
     padding: 30px 40px 40px 35px ;
+   padding-top: 100px;
   }
   .container .content .right-side{
    width: 75%;
@@ -276,6 +248,9 @@ body{
   .container{
     margin: 40px 0;
     height: 100%;
+    margin-top: 25px;
+    border-bottom: none;
+    box-shadow:none;
   }
   .container .content{
     flex-direction: column-reverse;
@@ -313,4 +288,5 @@ body{
 
 
 }
+
 
