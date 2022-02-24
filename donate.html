@@ -28,10 +28,16 @@
        </div>
 
        <div class="donateform">
-           <form action="save.php" method="post">
+           <form action="save.php" method="post" onsubmit="con();">
                <input type="text" name="name" class="form-control" placeholder="Your Name" required ><br>
-               <input type="email" name="ename" class="form-control" placeholder="Email" required ><br>
-               <input type="text" name="bank" class="form-control" placeholder="Bank" required ><br>
+               <input type="email" name="ename" class="form-control" placeholder="Email" required ><br><br>
+               <select name="bank" id="" class="form-control">
+                   <option class="lsp" value="boc">BOC</option>
+                   <option class="lsp" value="NSB">NSB</option>
+                   <option class="lsp" value="Pepoles bank">Pepoles bank</option>
+                   <option class="lsp" value="HND">HNB</option>
+                   <option class="lsp" value="Seylan">Seylan</option>
+               </select><br>
                <input type="text" name="cno" class="form-control" placeholder="Credit Card No" required ><br>
                <input type="text" name="valiu" class="form-control" placeholder="Amount $" required ><br>
 
@@ -47,9 +53,14 @@ const links=document.querySelector('.links')
    
    menubtn.addEventListener('click',()=>{
    links.classList.toggle('menu')
-   })
+   });
 
    /*end of nav fnction*/
+
+   function con(){
+    confirm("Please Conform Your Donation!");
+   }
+   
 </script>       
 </body>
 
