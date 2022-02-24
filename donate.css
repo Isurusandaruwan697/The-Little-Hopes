@@ -196,22 +196,7 @@ h3{
 input{
     height: 45px;
 }
-
-form .submit{
-    background-color:transparent;
-    background: crimson;
-    color: rgb(36, 36, 36);
-    font-size: 2vmin;
-    font-weight: bold;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top: 30px;
-    border-radius: 15px;
-    opacity: 0.9;
-
-
-
-}
+ 
 .lsp{
     color: #000;
     font-size: 2vmin;
